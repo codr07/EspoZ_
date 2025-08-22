@@ -1,0 +1,258 @@
+/*copyright© EspoZ*/
+@import url('https://fonts.googleapis.com/css2?family=Iceland&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+@import "tailwindcss";
+
+/*1st font*/
+.iceland-regular {
+    font-family: "Iceland", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+
+/*2nd font*/
+
+.comic-neue-light {
+    font-family: "Comic Neue", serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .comic-neue-regular {
+    font-family: "Comic Neue", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .comic-neue-bold {
+    font-family: "Comic Neue", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .comic-neue-light-italic {
+    font-family: "Comic Neue", serif;
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  .comic-neue-regular-italic {
+    font-family: "Comic Neue", serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .comic-neue-bold-italic {
+    font-family: "Comic Neue", serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+
+  /*3rd font*/
+
+.quicksand {
+    font-family: "Quicksand", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+  }
+
+  ::-webkit-scrollbar{
+    display: none;
+  }
+
+  :root{
+    --default-black:#000;
+    --default-white:#fff;
+    --default-red:#ff1717;
+    --default-purple:#5044e5;
+
+    --default-transition:0.3s ease;
+  }
+
+
+  body{
+    background: var(--default-black);
+    color: var(--default-white);
+  }
+
+  .sign{
+    background: var(--default-purple);
+    color: var(--default-white);
+  }
+  .sign img{
+    transition: var(--default-transition);
+  }
+  .sign:hover{
+    img{
+      transform: translateX(10px);
+      scale: 1.2;
+      transition: var(--default-transition);
+    }
+  }
+
+  .highlight{
+    color: #ff1717;
+    filter: drop-shadow(0 0 10px #ff5d5d94);
+  }
+
+  .search{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #search{
+    outline: none;
+    border: 1px solid #fff;
+    border-radius: 15px;
+  }
+
+  #search::placeholder{
+    opacity: 50%;
+  }
+
+  #search_btn{
+    outline: none;
+    border: 1px solid transparent;
+    background: var(--default-purple);
+    border-radius: 15px;
+    text-align: center;
+    font-weight: 600;
+    cursor: pointer;
+    transition: var(--default-transition);
+  }
+  #search_btn:hover{
+    background: transparent;
+    border: 1px solid #fafafa;
+    transition: var(--default-transition);
+  }
+
+  @media (max-width:342px) {
+    .search{
+      flex-direction: column;
+    }
+    #search, #search_btn{
+      width: 100%;
+    }
+  }
+
+  .category{
+    background-color: var(--default-purple);
+  }
+
+  .card{
+    background: #fafafa16;
+  }
+
+  @media (max-width:685px) {
+    .filter{
+      flex-direction: column;
+    }
+  }
+
+  #newsletter {
+    flex-direction: column;
+  }
+  #newsletter button{
+    background: var(--default-purple);
+    transition: var(--default-transition);
+  }
+  #newsletter button:hover{
+    font-size: 20px;
+    transition: var(--default-transition);
+  }
+
+  .subtitle{
+    color: #9b7de8;
+    font-weight: 600;
+  }
+  .author{
+    border: 2px solid #5044e5;
+    width: auto;
+    background: #4f44e52b;
+    padding: 0.4rem 3rem;
+    border-radius: 50px;
+    font-weight: 600;
+  }
+
+  .date{
+    border: 2px solid #b4aff86c;
+    border-radius: 50px;
+    background: #b4aff823;
+  }
+
+.rich-text { font-size: 20px;  }
+
+.rich-text p { margin-bottom: 20px; color: #c6c6c6; padding-left: 3rem; }
+
+.rich-text h1 { font-size: 36px; font-weight: 700; color: #ffffff !important; margin: 32px 0; }
+
+.rich-text h2 { font-size: 30px; font-weight: 700; color: #ffffff !important; margin: 24px 0; }
+
+.rich-text h3 { font-size: 18px; font-weight: 600; color: #ffffff !important; margin: 20px 0; }
+
+.rich-text h4 { font-size: 16px; font-weight: 500; color: #ffffff !important; margin: 16px 0; }
+
+.rich-text h5 { font-size: 14px; font-weight: 400; color: #ffffff !important; margin: 12px 0; }
+
+.rich-text h6 { font-size: 12px; font-weight: 400; color: #ffffff !important; margin: 8px 0; }
+
+.rich-text strong { font-weight: 700; }
+
+.rich-text ol { margin-left: 30px; list-style-type: decimal; }
+
+.rich-text ul { margin-left: 30px; list-style-type: disc; }
+
+.rich-text li { margin-bottom: 8px; }
+
+.rich-text a { color: #007AFF }
+
+.comment{
+  background: #53535350;
+  border-radius: 20px;
+}
+
+.comment_date{
+  color: #767676;
+  font-size: 10px;
+  text-align: right;
+}
+
+.comment_btn{
+  background: #5044e5;
+}
+
+.comment_btn:hover{
+  background: #584ee5;
+}
+
+.loader{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.load{
+  background-color: transparent;
+  width: 15px;
+  height: 15px;
+  border: 2px solid #5044e5;
+  animation: spin 2s infinite ease-in-out;
+}
+
+@keyframes spin {
+  0%{
+    transform: rotateY('0deg');
+  }
+  100%{
+    transform: rotateY('360deg');
+  }
+}
